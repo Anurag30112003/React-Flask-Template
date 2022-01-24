@@ -5,7 +5,7 @@ function App() {
   const [variable,setVariable] = useState(0);
 
   useEffect(()=>{
-    fetch('/variable').then(response=>response.json()).then(data=>{
+    fetch('/api/variable').then(response=>response.json()).then(data=>{
       setVariable(data.variable);
     });
   },[]);
