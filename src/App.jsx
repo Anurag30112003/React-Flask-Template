@@ -2,7 +2,7 @@ import React ,{useState,useEffect} from 'react';
 import './App.css';
 
 function App() {
-  const [variable,setVariable] = useState(0);
+  const [variable,setVariable] = useState([]);
 
   useEffect(()=>{
     fetch('/api/variable').then(response=>response.json()).then(data=>{
